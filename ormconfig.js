@@ -1,10 +1,11 @@
 module.exports={
+ 
     "type":"postgres",
-    "host":process.env.APP_URL || "localhost",
-    "port":5437,
-    "username":"postgres",
-    "password":"123",
-    "database":"facile-challenge",
+    "host":process.env.Host || "localhost",
+    "port":process.env.Port || 5437,
+    "username":process.env.User || "postgres",
+    "password":process.env.Password || "123",
+    "database":process.env.Database ||"facile-challenge",
     "entities":[
         "./src/modules/**/infra/typeorm/entities/*.ts"
     ],
