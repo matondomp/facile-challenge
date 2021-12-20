@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.encriptRoute = void 0;
+var express_1 = require("express");
+var encriptController_1 = require("../controller/encriptController");
+var encriptController = new encriptController_1.EncriptController();
+var encriptRoute = (0, express_1.Router)();
+exports.encriptRoute = encriptRoute;
+encriptRoute.post('/', encriptController.create);
+encriptRoute.patch('/:id', encriptController.listDecriptedWord);
