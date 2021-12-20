@@ -32,6 +32,6 @@ app.use((error:Error,request:Request,response: Response,next:NextFunction)=>{
     })
 }) 
 
-app.listen(process.env.APP_URL || "3334",()=>{
+app.listen("3334",()=>{
     console.log("listining in 3334 🚀️🚀️🚀️🚀️🚀️")
 })
