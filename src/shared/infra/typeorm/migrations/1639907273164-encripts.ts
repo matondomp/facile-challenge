@@ -9,10 +9,10 @@ export class encripts1639907273164 implements MigrationInterface {
                 columns:[
                     {
                         name:"id",
-                        type:"integer",
+                        type:"int",
+                        isGenerated: true,
                         generationStrategy:'increment',
                         isPrimary:true
-
                     },
                     {
                         name:"name",

@@ -9,8 +9,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/crypto-js": "^4.0.2",
     "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.1.1",
     "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
     "jest": "^27.4.5",
     "pg": "^8.7.1",
     "tsyringe": "^4.6.0",

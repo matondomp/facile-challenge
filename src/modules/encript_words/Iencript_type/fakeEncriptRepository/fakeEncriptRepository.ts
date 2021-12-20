@@ -11,5 +11,9 @@ export class FakeEncriptRepository implements IencriptType {
        Object.assign(encript,{name})
        return encript 
     }
-
+  public async listDecriptWrods(id:number):Promise<Encript>{
+        const encript =new Encript()
+        Object.assign(encript,{id})
+        return encript 
+  }
 }

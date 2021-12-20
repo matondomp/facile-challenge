@@ -19,4 +19,9 @@ export class EncriptRepository implements IencriptType{
         
        return savedData
    }
+
+   public async listDecriptWrods(id:number):Promise<Encript | undefined>{
+      const decripted=await this.encriptRepository.findOne(id)
+      return decripted
+  }
 }
