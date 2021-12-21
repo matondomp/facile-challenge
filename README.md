@@ -33,16 +33,12 @@
     BACKEND
  </h1>
  <ul>
-   <li>Criar uma imagem docker com a seguintes configuração : 
+   <li>BASE DE DADO REMOTA
       <ul>
-       <li>porta externa da imagem :5437</li>   
-       <li>username:postgres</li>  
-       <li>password:123  ->default</li> 
-       <li>database: facile-challenge</li> 
+       <li>Hospedada no Heroku</li>
       <ul>
    </li>
    <li>executar: yarn ou npm install</li>
-   <li>executar: yarn typeorm migration:run</li>
    <li>executar: yarn test</li>
    <li>executar: yarn dev</li>
  </ul>
