@@ -29,4 +29,19 @@ describe("DecriptService",()=>{
         const decreptedWord=await fakeDecriptRepository.decriptWordsProvider('Faz certo - que dá certo!')
         await expect(decreptedWord).toBe(encreptedWord.name)
     })
+
+    it("should be able to call decriptService ",async()=>{
+        const encripted=await encriptService.execute('Faz certo - que dá certo!')
+        console.log(encripted)
+        const decreptedWord=jest.spyOn(fakeDecriptRepository,'decriptWordsProvider')
+        await decriptService.execute(encripted.id)
+
+        expect(decreptedWord).toBeCalled()
+    })
+
+    it("should be able to check if encript repository exists ",async()=>{
+        
+        const encreptedWord=await encriptService.execute('Faz certo - que dá certo!')
+         expect(decriptService.execute(8778899)).rejects.toBeInstanceOf(HundleError)
+    })
 })

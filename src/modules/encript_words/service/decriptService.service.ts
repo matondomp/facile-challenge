@@ -22,6 +22,7 @@ export class DecriptService{
     public async  execute(id:number):Promise<string>{
 
            const getRepository= await this.repository.listDecriptWrods(id)
+           console.log(getRepository)
             if(!getRepository){
                 throw new HundleError("this word doesn´t exist!",400,"")
             }
