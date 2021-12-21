@@ -7,13 +7,13 @@ module.exports={
     "password":process.env.Password || "123",
     "database":process.env.Database ||"facile-challenge",
     "entities":[
-        "./dist/modules/**/infra/typeorm/entities/*.ts"
+        "./src/modules/**/infra/typeorm/entities/*.ts"
     ],
     "migrations":[
-        "./dist/shared/infra/typeorm/migrations/*.ts"
+        "./src/shared/infra/typeorm/migrations/*.ts"
     ],
     "cli":{
-        "migrationsDir":"./dist/shared/infra/typeorm/migrations/*.ts"
+        "migrationsDir":"./src/shared/infra/typeorm/migrations/*.ts"
     },
     "extra": {
         "ssl": {

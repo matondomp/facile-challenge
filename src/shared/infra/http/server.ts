@@ -18,7 +18,7 @@ app.use(express.json())
 
 app.use(route)
 
-app.use((error:Error,request:Request,response: Response,next:NextFunction)=>{
+/* app.use((error:Error,request:Request,response: Response,next:NextFunction)=>{
     if( error instanceof HundleError){
       return response.status(error.statusCode).json({
             code:error.code,
@@ -30,7 +30,7 @@ app.use((error:Error,request:Request,response: Response,next:NextFunction)=>{
             error:"error",
             message:"Internal server error"
     })
-})  
+})   */
 
 app.listen(process.env.APP_URL || "3334",()=>{
     console.log("listining in 3334 🚀️🚀️🚀️🚀️🚀️")
